@@ -1,0 +1,12 @@
+server:
+  port: 8545
+
+spring:
+  application:
+    name: ms-customer
+
+eureka:
+  client:
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/

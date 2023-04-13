@@ -1,0 +1,69 @@
+server:
+  port: 9090
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          default-label: main
+          uri: git@github.com:EmersonChipana/configuration.git
+          ignoreLocalSshSettings: true
+          hostKey: AAAAB3NzaC1yc2EAAAADAQABAAABgQCj7ndNxQowgcQnjshcLrqPEiiphnt+VTTvDP6mHBL9j1aNUkY4Ue1gvwnGLVlOhGeYrnZaMgRK6+PKCUXaDbC7qtbW8gIkhL7aGCsOr/C56SJMy/BCZfxd1nWzAOxSDPgVsmerOBYfNqltV9/hWCqBywINIR+5dIg6JTJ72pcEpEjcYgXkE2YEFXV1JHnsKgbLWNlhScqb2UmyRkQyytRLtL+38TGxkxCflmO+5Z8CSSNY7GidjMIZ7Q4zMjA2n1nGrlTDkzwDCsw+wqFPGQA179cnfGWOWRVruj16z6XyvxvjJwbz0wQZ75XK5tKSb7FNyeIEs4TT4jk+S4dhPeAUC5y+bDYirYgM4GC7uEnztnZyaVWQ7B381AK4Qdrwt51ZqExKbQpTUNn+EjqoTwvqNj4kqx5QUCI0ThS/YkOxJCXmPUWZbhjpCg56i+2aB6CmK2JGhn57K5mj0MNdBXA4/WnwH6XoPWJzK5Nyu2zB3nAZp+S5hpQs+p1vN1/wsjk=
+          hostKeyAlgorithm: ssh-rsa
+          privateKey: |
+                      -----BEGIN OPENSSH PRIVATE KEY-----
+                      b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABlwAAAAdzc2gtcn
+                      NhAAAAAwEAAQAAAYEA6q0mDsHrSe/NF6/D7OAA6eMc1XF7n/ehBFds7DMZFHVioEpVNamw
+                      I1t5cdjFf+l6XqMcxPUhhtAI6WoW4W2Vw+97VEcAr81Lfk5NwKb1cSkAarsLUGAUu+G2wP
+                      fkXZOSUPwZijzUICkshLNomAGaMVQrS7nOkDVMM2kteMtJS12OlZfEO56n4wKVWJmdQGdk
+                      I/WJ71CCw6sxV5cDl/EjCwnEDWZqjSxqKaAgRvu7oIfYscoo16kteQ9oja4k3meoLt4qZJ
+                      kmlufEBoVjFZjiWHI6zgRIn8O3Isw8UMjV+QlINtse7FEYvcWCS3EnuueYeUD2wllNewZo
+                      yUgf9g6hdaOwtkN93PDAJ7ZYV/mEnCfi81rZjr3OTF2+GApx1nmJdtUbqkC06zrnJ6/6Nb
+                      Cu61JTh7dkL79fdZW6ICmd+Iz+EpH1RtcqlkiksvA3tm+EdJ5R9kdL9wFSKjyYgrLh6DGG
+                      FQ37JD3ESFMIVZElYNaQGtsn0Zqo67hKJsFneWFZAAAFgPh7ZDH4e2QxAAAAB3NzaC1yc2
+                      EAAAGBAOqtJg7B60nvzRevw+zgAOnjHNVxe5/3oQRXbOwzGRR1YqBKVTWpsCNbeXHYxX/p
+                      el6jHMT1IYbQCOlqFuFtlcPve1RHAK/NS35OTcCm9XEpAGq7C1BgFLvhtsD35F2TklD8GY
+                      o81CApLISzaJgBmjFUK0u5zpA1TDNpLXjLSUtdjpWXxDuep+MClViZnUBnZCP1ie9QgsOr
+                      MVeXA5fxIwsJxA1mao0saimgIEb7u6CH2LHKKNepLXkPaI2uJN5nqC7eKmSZJpbnxAaFYx
+                      WY4lhyOs4ESJ/DtyLMPFDI1fkJSDbbHuxRGL3FgktxJ7rnmHlA9sJZTXsGaMlIH/YOoXWj
+                      sLZDfdzwwCe2WFf5hJwn4vNa2Y69zkxdvhgKcdZ5iXbVG6pAtOs65yev+jWwrutSU4e3ZC
+                      +/X3WVuiApnfiM/hKR9UbXKpZIpLLwN7ZvhHSeUfZHS/cBUio8mIKy4egxhhUN+yQ9xEhT
+                      CFWRJWDWkBrbJ9GaqOu4SibBZ3lhWQAAAAMBAAEAAAGAR+u6zykFKAqzC0BVxmG8RfHRo2
+                      R9I8Bre34jppveYtO63y8IwEJ59cwSAx8RICt40kohBgeuN7fIE2jtDDdef8cEQAbmofpD
+                      2bi7wYApln2fYBZk2EQp9o6tSKRwO3F/lQw984zC4fxcZWrqcjODgvytrC6MrMt4yATC59
+                      M9ajiI+zWg8TilcUAYbyfc9qD5IsAcfthoyvjLTXG9qzI+sCJVEFpD63IiMxGc8sQxc3hO
+                      o+Y18CosAn8DZvBo4jRX04tvuFxy8DPggyCq3YTIFyUTr58u8jbAKomUyt1xoJShYS2QqS
+                      PQsYAprdTnUOy5GBtZ8Vtx3N7/uEg2IvkIlkFeuoaTlwjIpDg9idCYzxSTZKoTxAbr+8GK
+                      nV7zgdD4fxRoSvKfmT7yte0AvfKrXynS6itDoDjnMc6bUcVIyrdiAwR36BGPTadzaEbzAO
+                      PyRZg3yQKeg6tisFDx1/jKxKGRtmKOpmviblpZQizIeX+vdpiS1XUBqM9/EmCtdXqBAAAA
+                      wQCLR7Kqh6ztq3E8YkmgLANvDJ2Qgn3WJLQmnIkEuQIkhTmD3udFsQsgVHu3BQCx+nIqAt
+                      CLOO9ucQ8xxyIOhxx3ERdVz9jzfnt60aoJm0NJveDaOMmWr6I2vtknVUr15Fjo2QF+yidc
+                      hY3JJRxm1eyqYD30SyDRfu6Uo2kKZ3r8B1l+x/UOTXFMBvj19NpnYwqlMvn9Cy1/zIG/+5
+                      FAdqsvtP0+1cln3oY9FcoKH3l1/Md7dBvJNaJ6h/A1bMA0t2MAAADBAPksR9Od15v2dpvN
+                      x1SArJFLL8FIKDHF/TYFsd3dJa0oDDApr9rNW/AIcclVIxuawKnQfhF7Fjhm+KJLUvLhNd
+                      qoyi9s1OiQeqdvCLEPd0XnZ+a8Z5l8Tldikh5ZdaMzjUBMKoWyXmAko5LBSLGxDhYhg/tG
+                      GsqV6r6pwuFoKzfIERS90fvh7Kil2URNyE8qoWJc4PfbyK1zuxFUs6zZ6JxrDabEK3VOc3
+                      FDHS7SfveYI4NqjO7QQzqYkvPJtgDrSQAAAMEA8RswDQJaZ6q4OhOr8GleJRmSrpVFKHdr
+                      KizpPygmCsVVmMLSPBekarfPmAMZG2SgYYA5g3ZisaqOw6J3Pk2b8lcuNelOP1riVqb1fL
+                      /UeBmTCKyp/MRi+h+vET0Js3pDvfKmsJu21vf6/vFwIVCpg8sV1EaXPZEPu6cphcsQboFj
+                      mV9mV35yLvYgSN0z3qJp8Neyd1wpAUKQTrx0PV+zV2uwtEj089G4ysPoSiOtjtRKRrUR9Q
+                      GmH9hNXz/wTjWRAAAACWVtZXJAZW1lcgE=
+                      -----END OPENSSH PRIVATE KEY-----
+            
+
+  application:
+    name: ms-config-server
+  profiles:
+    active: test
+
+
+
+eureka:
+  client:
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/
+encrypt:
+  key: /.SchaTELCD5%DLQTPS.ptmbDo5P-./
+
